@@ -12,10 +12,18 @@ export const updateUserAvatar = async (req, res, next) => {
   const user = await User.findByIdAndUpdate(
     req.user._id,
     { avatar: result.secure_url },
-    { new: true },
+    { returnDocument: 'after' },
   );
 
   res.status(200).json({ url: user.avatar });
+};
+
+export const updateUser = async (req, res) => {
+  const user = await User.findByIdAndUpdate(req.user._id, req.body, {
+    returnDocument: 'after',
+  });
+
+  res.json(user);
 };
 
 export const getMe = async (req, res) => {

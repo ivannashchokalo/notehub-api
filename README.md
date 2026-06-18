@@ -156,6 +156,26 @@ Production mode:
 npm start
 ```
 
+## 🧪 Demo Account
+
+Use the demo account below to explore the application and test its features:
+
+```text
+Email: user@gmail.com
+Password: 12345678
+```
+
+The demo account contains sample notes for testing:
+
+* 📝 Note management (CRUD)
+* 🔍 Search functionality
+* 🏷️ Tag filtering
+* 📄 Pagination
+* 👤 User profile and avatar management
+
+
+
+
 ## 🔗 API Endpoints
 
 ### 🔐 Authentication
