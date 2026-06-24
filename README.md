@@ -1,6 +1,6 @@
-# 🚀 Task Flow API
+# 🚀 NoteHub API
 
-Backend API for the Task Flow application — a personal note management system with authentication, avatar uploads, email notifications, and note organization.
+Backend API for the NoteHub application — a personal note management system with authentication, avatar uploads, email notifications, and note organization.
 
 ## ✨ Features
 
