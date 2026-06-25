@@ -24,7 +24,7 @@ Backend API for the NoteHub application — a personal note management system wi
 ### 👤 User Management
 
 * Get current authenticated user
-* Avatar upload
+* Avatar upload with Cloudinary storage
 * Image validation
 * Cloudinary integration for image storage
 
@@ -81,6 +81,7 @@ Backend API for the NoteHub application — a personal note management system wi
 * 📄 Handlebars
 * ✅ Celebrate/Joi
 * ⚠️ http-errors
+* 🌐 CORS
 
 ## 📂 Project Structure
 
@@ -104,8 +105,8 @@ src/
 Clone the repository:
 
 ```bash
-git clone <repository-url>
-cd task-flow-api
+git clone git@github.com:ivannashchokalo/notehub-api.git
+cd notehub-api
 npm install
 ```
 
@@ -178,6 +179,9 @@ The demo account contains sample notes for testing:
 
 ## 🔗 API Endpoints
 
+Base URL:
+https://notehub-api-dxyp.onrender.com
+
 ### 🔐 Authentication
 
 | Method | Endpoint               |
@@ -191,10 +195,11 @@ The demo account contains sample notes for testing:
 
 ### 👤 Users
 
-| Method | Endpoint       |
-| ------ | -------------- |
-| GET    | /users/current |
-| PATCH  | /users/avatar  |
+| Method | Endpoint          |
+| ------ | ----------------- |
+| GET    | /users/me         |
+| PATCH  | /users/me         |
+| PATCH  | /users/me/avatar  |
 
 ### 📝 Notes
 
@@ -221,3 +226,5 @@ Avatar uploads:
 * 💼 Junior Full-Stack Developer
 * ⚛️ React & Next.js Developer
 * 🟢 Node.js & Express Developer
+
+🔗 GitHub: https://github.com/ivannashchokalo
